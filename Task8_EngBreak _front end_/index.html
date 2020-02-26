@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Contact V2</title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script>
+		function validateForm() {
+		  var x = document.forms["myForm"]["fname"].value;
+		  if (x == "") {
+			alert("Name must be filled out");
+			return false;
+		  }
+		  var x = document.forms["myForm"]["email"].value;
+		  if (x == "") {
+			alert("Name must be filled out");
+			return false;
+		  }
+		  var x = document.forms["myForm"]["Phone"].value;
+		  if (x == "") {
+			alert("Name must be filled out");
+			return false;
+		  }
+		  var x = document.forms["myForm"]["password"].value;
+		  if (x == "") {
+			alert("Name must be filled out");
+			return false;
+		  }
+		}
+		</script>
+
+</head>
+<body>
+
+		<div class="Form">
+                <div class="contact100-map" id="google_map" data-map-x="40.722047" data-map-y="-73.986422" data-pin="images/icons/map-marker.png" data-scrollwhell="0" data-draggable="1"></div>
+
+			<div class="container">
+				<form name="myForm"onsubmit="return validateForm()" method="post">
+					
+					
+				
+				<span class="contact-form-title">
+						Form validation
+					</span>
+	
+
+					<div class="inputform" >
+                        <label for="name">Full Name:</label>
+						<input class="input" type="text" name="fname" placeholder="Enter Full Name">
+						<span class="focus-input2"></span>
+					</div>
+
+					<div class="inputform" >
+                        <label for="name">Email:</label>
+						<input class="input" type="text" name="email" placeholder="Enter Email Address">
+						<span class="focus-input2"></span>
+                    </div>
+                    
+                    <div class="inputform" >
+                            <label for="name">Phone:</label>
+                            <input class="input" name="Phone" placeholder="Enter Phone Number">
+                            <span class="focus-input2"></span>
+                    </div>
+
+					<div class="inputform" >
+                        <label for="name">password</label>
+						<input class="input"  type="password" name="password" placeholder="Your password"></input>
+						<span class="focus-input2"></span>
+					</div>
+
+					<div class="container-contact2-form-btn">
+						<div class="wrap-contact2-form-btn">
+							<div class="contact2-form-bgbtn"></div>
+							<input type="submit" value="Submit" class="submits">
+							
+							
+					
+						</div>
+					</div>
+					
+				</form>
+			</div>
+		</div>
+		
+</body>
+</html>
